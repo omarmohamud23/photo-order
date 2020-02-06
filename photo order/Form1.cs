@@ -50,9 +50,14 @@ namespace photo_order
                 case "Large":
                     price = 0.40;
                     break;
+                      case " Extra Large":
+                    price = 0.50;
+                    break;
+                   
                 default:
                     MessageBox.Show("Uknown size");
                     return;   //stop processing this event
+                    
 
             }
             txtPrice.Text = price.ToString("c"); //fotmating as currency
